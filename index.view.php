@@ -32,7 +32,7 @@
     </div>
 </header>
 <main class="p-6 container mx-auto">
-    <a href="/create.php" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded my-4">Add Post</a>
+    <a href="/create" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded my-4">Add Post</a>
     <table class="w-full table-auto">
         <thead>
             <tr>
@@ -46,11 +46,11 @@
             <tr>
                 <td class="border px-4 py-2"><?= $post ['id'] ?></td>
                 <td class="border px-4 py-2">
-                    <a href="/show.php?id=<?= $post ['id'] ?>" class="text-blue-800 underline"><?= $post ['title'] ?></a>
+                    <a href="/show?id=<?= $post ['id'] ?>" class="text-blue-800 underline"><?= $post ['title'] ?></a>
                 </td>
                 <td class="border px-4 py-2">
-                    <a href="/edit.php?id=<?= $post ['id'] ?>" class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">Edit</a>
-                    <a href="/delete.php?id=<?= $post ['id'] ?>" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onclick="return confirm('Are you sure ?')">Delete</a>
+                    <a href="/edit?id=<?= $post ['id'] ?>" class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded">Edit</a>
+                    <a href="/delete?id=<?= $post ['id'] ?>" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onclick="return confirm('Are you sure ?')">Delete</a>
                 </td>
             </tr>
            <?php endforeach ?>

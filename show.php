@@ -1,7 +1,7 @@
 <?php
     //Подключайм файл с функциями
     include 'functions.php';    
-    include 'database/start.php';
+    $db = include 'database/start.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

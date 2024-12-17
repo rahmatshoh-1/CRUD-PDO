@@ -1,6 +1,6 @@
 <?php
-    $config = include ('database/start.php');
+    $config = include __DIR__.('/../config.php');
     include 'QueryBuilder.php';
     include 'Conection.php';
     // Создаем класс и передаем нам PDO 
-    $db = new QueryBuilder(Connection::make($config['database']));
+   return new QueryBuilder(Connection::make($config['database']));
